@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>WebForm</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 class="heading"><span class="content_heading">Register</span></h1>
+        <p class="content">
+          Create your account. It's free and only takes a minute.
+        </p>
+      </header>
+      <form class="registration" action="#" method="GET">
+        <div class="name">
+          <input
+            autofocus
+            class="initialization"
+            type="text"
+            name="First Name"
+            placeholder="First Name"
+            required
+          />
+          <input
+            class="initialization"
+            type="text"
+            name="Last Name"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <input type="email" name="email" placeholder="Email" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <input
+          type="password"
+          name="confirm password"
+          placeholder="Confirm Password"
+          required
+        />
+        <label class="opacity">
+          <input type="checkbox" />I accept the
+          <a href="#" class="link">Terms of Use</a> &
+          <a href="#" class="link">Privacy Policy</a>.
+        </label>
+        <button class="btn" type="submit">Register Now</button>
+      </form>
+    </main>
+  </body>
+</html>
