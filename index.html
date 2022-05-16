@@ -3,55 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>WebForm</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Registration form</title>
   </head>
   <body>
-    <main>
+    <main class="main_content">
       <header>
         <h1 class="heading"><span class="content_heading">Register</span></h1>
         <p class="content">
           Create your account. It's free and only takes a minute.
         </p>
       </header>
-      <form class="registration" action="#" method="GET">
-        <div class="name">
+      <form class="registration_form" action="#" method="GET">
+        <label class="label wrapper_name">
           <input
             autofocus
-            class="initialization"
+            class="input name"
             type="text"
-            name="First Name"
             placeholder="First Name"
             required
           />
           <input
-            class="initialization"
+            class="input name"
             type="text"
-            name="Last Name"
             placeholder="Last Name"
             required
           />
-        </div>
-        <input type="email" name="email" placeholder="Email" required />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          required
-        />
-        <input
-          type="password"
-          name="confirm password"
-          placeholder="Confirm Password"
-          required
-        />
-        <label class="opacity">
-          <input type="checkbox" />I accept the
+        </label>
+        <label class="label"
+          ><input class="input" type="email" placeholder="Email" required
+        /></label>
+        <label class="label"
+          ><input class="input" type="password" placeholder="Password" required
+        /></label>
+        <label class="label"
+          ><input
+            class="input"
+            type="password"
+            placeholder="Confirm Password"
+            required
+        /></label>
+        <label class="label wrapper_accept">
+          <input class="input_accept" type="checkbox" />I accept the
           <a href="#" class="link">Terms of Use</a> &
           <a href="#" class="link">Privacy Policy</a>.
         </label>
-        <button class="btn" type="submit">Register Now</button>
+        <button class="button" type="submit">Register Now</button>
       </form>
     </main>
   </body>
